@@ -1,13 +1,37 @@
-class Alunos {
-    constructor(nomeDoAluno, notaDoAluno) {
-        this.nome = nomeDoAluno;
-        this.nota = notaDoAluno;
+
+
+
+const arrayAlunos = [
+    {
+        "nome": "Paulo",
+        "nota": 8
+    },
+    {
+        "nome": "João",
+        "nota": 10
+    },
+    {
+        "nome": "Pedro",
+        "nota": 5
+    },
+    {
+        "nome": "José",
+        "nota": 6
+    },
+    {
+        "nome": "Tiago",
+        "nota": 7
+    },
+    {
+        "nome": "Joel",
+        "nota": 4
     }
-}
 
-const alunosAprovados = [];
 
-if(this.nota >= 6){
-    alunosAprovados = alunosAprovados + this.nome;
-    console.log(`Os alunos ${alunosAprovados} foram aprovados pois tiveram nota maior ou igual a 6`)
-}
+];
+
+let alunosAprovados = arrayAlunos.filter((arrayAlunosnota) => {
+    return arrayAlunosnota >= 6;
+})
+
+console.log(alunosAprovados)
